@@ -1,0 +1,11 @@
+{
+  "name": "prototipo-relato-atendimento",
+  "version": "1.0.0",
+  "description": "Protótipo navegável e funcional para teste de usabilidade da construção de relato no Atendimento com IA",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Equipe de Design de Produto",
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atendimento - Construção de Relato</title>
+  
+  <!-- Fontes Open Sans (Google Fonts + Fallback) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+  
+  <!-- Digix UI (Tema Papel Zero) -->
+  <link rel="stylesheet" href="assets/vendor/digix-ui/digix-ui-papel-zero.css">
+  
+  <!-- Estilos Customizados de Alta Fidelidade (Figma + Digix UI) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       1. CABEÇALHO DO SISTEMA (NAVBAR TOPO)
+       ====================================================================== -->
+  <header class="top-nav">
+    <div class="top-nav__left">
+      <a href="#" class="top-nav__logo" title="Início">
+        <img src="assets/img/logo.svg" alt="Logotipo do Sistema">
+      </a>
+      <ul class="top-nav__menu">
+        <li class="top-nav__item">
+          <a class="top-nav__link" href="#">Pré-Atendimento Presencial</a>
+        </li>
+        <li class="top-nav__item">
+          <a class="top-nav__link" href="#">Fila de Atendimento</a>
+        </li>
+        <li class="top-nav__item">
+          <a class="top-nav__link" href="#">Consultas <i class="fa-solid fa-chevron-down" style="font-size: 11px;"></i></a>
+        </li>
+        <li class="top-nav__item">
+          <a class="top-nav__link" href="#">Audiências <i class="fa-solid fa-chevron-down" style="font-size: 11px;"></i></a>
+        </li>
+        <li class="top-nav__item">
+          <a class="top-nav__link" href="#">Relatórios <i class="fa-solid fa-chevron-down" style="font-size: 11px;"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="top-nav__right">
+      <div class="top-nav__ponto">
+        <span>Ponto:</span> <strong>Geral 02</strong> <i class="fa-solid fa-chevron-down" style="font-size: 11px;"></i>
+      </div>
+      <div class="top-nav__user">
+        <div class="top-nav__avatar">
+          <i class="fa-regular fa-user"></i>
+        </div>
+        <span>Atendente</span>
+        <i class="fa-solid fa-chevron-down" style="font-size: 11px;"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       2. SUB-BARRA DE IDENTIFICAÇÃO DO PROCESSO
+       ====================================================================== -->
+  <section class="sub-nav">
+    <div class="sub-nav__container">
+      <h1 class="sub-nav__titulo">23.07.2026.103.73001-9</h1>
+      <p class="sub-nav__subtitulo">Atendimento <strong>1</strong> de <strong>1</strong></p>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       3. CORPO PRINCIPAL DO ATENDIMENTO (DUAS COLUNAS)
+       ====================================================================== -->
+  <main class="layout-container">
+    
+    <!-- COLUNA DA ESQUERDA: DADOS DE APOIO -->
+    <aside class="sidebar">
+      
+      <!-- Card Consumidor -->
+      <div class="card-box">
+        <div class="card-box__header">
+          <i class="fa-regular fa-user card-box__icon"></i>
+          <h2 class="card-box__title">Consumidor</h2>
+        </div>
+        <div class="card-box__divider"></div>
+        <div class="card-box__body">
+          <div class="entity-info">
+            <div class="entity-info__col">
+              <span class="entity-info__sublabel">Nome</span>
+              <span class="entity-info__name">Franciele Trindade de Arruda</span>
+              <div class="entity-info__meta">
+                <span>CPF: <strong>915.071.459-77</strong></span>
+                <span class="tag-sync"><i class="fa-solid fa-cloud-arrow-down"></i></span>
+              </div>
+            </div>
+            <button type="button" class="btn-icon-view" title="Visualizar detalhes do consumidor">
+              <i class="fa-regular fa-eye"></i>
+            </button>
+          </div>
+        </div>
+        <div class="card-box__footer-action">
+          <button type="button" class="btn-link-action">Editar dados do consumidor</button>
+        </div>
+      </div>
+
+      <!-- Card Fornecedor(es) -->
+      <div class="card-box">
+        <div class="card-box__header">
+          <i class="fa-solid fa-industry card-box__icon"></i>
+          <h2 class="card-box__title">Fornecedor(es)</h2>
+        </div>
+        <div class="card-box__divider"></div>
+        <div class="card-box__body">
+          <div class="entity-info">
+            <div class="entity-info__col">
+              <span class="entity-info__name" style="color: var(--cor-cinza-80);">LOJAS AMERICANAS S.A</span>
+              <div class="entity-info__meta">
+                <span>CNPJ <strong>10.664.513/0001-50</strong></span>
+                <span class="tag-sync"><i class="fa-solid fa-cloud-arrow-down"></i></span>
+              </div>
+            </div>
+            <button type="button" class="btn-icon-view" title="Visualizar detalhes do fornecedor">
+              <i class="fa-regular fa-eye"></i>
+            </button>
+          </div>
+        </div>
+        <div class="card-box__footer-action">
+          <button type="button" class="btn-link-action">Alterar fornecedor(es)</button>
+        </div>
+      </div>
+
+      <!-- Card Histórico -->
+      <div class="card-box">
+        <div class="card-box__header">
+          <i class="fa-regular fa-list-check card-box__icon"></i>
+          <h2 class="card-box__title">Histórico</h2>
+        </div>
+        <div class="card-box__divider"></div>
+        <div class="card-box__body">
+          <div class="timeline-entry">
+            <div class="timeline-entry__left">
+              <i class="fa-regular fa-file-lines timeline-entry__icon"></i>
+              <div class="timeline-entry__line"></div>
+            </div>
+            <div class="timeline-entry__right">
+              <span class="timeline-entry__date">23/07/2026 - 15:06</span>
+              <a href="#" class="timeline-entry__protocol">23.07.2026.103.73001-9</a>
+              <span class="timeline-entry__status">Reclamação Direta</span>
+              <span class="timeline-entry__vendor-label">Fornecedor(es)</span>
+              <span class="timeline-entry__vendor-val">LOJAS AMERICANAS S.A</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- COLUNA DA DIREITA: FORMULÁRIO DO ATENDIMENTO -->
+    <section class="main-card">
+      <div class="main-card__header">
+        <i class="fa-regular fa-file-lines main-card__header-icon"></i>
+        <h2 class="main-card__title">Atendimento</h2>
+      </div>
+      <div class="card-box__divider"></div>
+
+      <div class="main-card__form">
+        
+        <!-- Linha: Tipo de Atendimento & Tipo de Reclamação -->
+        <div class="form-row-2">
+          <div class="form-field">
+            <label class="form-label" for="selectTipoAtendimento">Tipo de Atendimento</label>
+            <select class="form-select" id="selectTipoAtendimento">
+              <option value="" selected disabled>Selecione...</option>
+              <option value="PIP Processo de Investigação Preliminar">PIP Processo de Investigação Preliminar</option>
+              <option value="Reclamação">Reclamação</option>
+              <option value="Consulta">Consulta</option>
+              <option value="Denúncia">Denúncia</option>
+            </select>
+            <span class="form-error-message" id="errorTipoAtendimento" style="display: none;">O campo Tipo de Atendimento é obrigatório.</span>
+          </div>
+          <div class="form-field" id="fieldTipoReclamacao" style="display: none;">
+            <label class="form-label" for="selectTipoReclamacao">Tipo de Reclamação</label>
+            <select class="form-select" id="selectTipoReclamacao">
+              <option value="CIP" selected>CIP</option>
+              <option value="Abertura Direta">Abertura Direta</option>
+            </select>
+          </div>
+          <div class="form-field" id="fieldTipoDenuncia" style="display: none;">
+            <label class="form-label" for="selectTipoDenuncia">Tipo de Denúncia</label>
+            <select class="form-select" id="selectTipoDenuncia">
+              <option value="" selected disabled>Selecione...</option>
+              <option value="Atendimento Preferencial">Atendimento Preferencial</option>
+              <option value="Ausência de Preços">Ausência de Preços</option>
+              <option value="Divergência de Preços">Divergência de Preços</option>
+              <option value="Fila de Banco">Fila de Banco</option>
+              <option value="Produtos Vencidos">Produtos Vencidos</option>
+              <option value="Propaganda Enganosa">Propaganda Enganosa</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- ==================================================================
+             NOVO BLOCO: CONSTRUÇÃO DE RELATO DE RECLAMAÇÃO (DIRECIONADORES)
+             ================================================================== -->
+        <div class="relato-builder" id="relatoBuilderContainer" style="display: none;">
+          
+          <div class="relato-builder__header">
+            <div class="relato-builder__header-left">
+              <div class="relato-builder__badge-row">
+                <span class="badge-novo"><i class="fa-solid fa-wand-magic-sparkles"></i> Novo</span>
+                <h3 class="relato-builder__title">Construção de relato de reclamação</h3>
+              </div>
+              <p class="relato-builder__desc">Registre os pontos essenciais da solicitação. A IA organizará essas informações em um relato para sua revisão.</p>
+            </div>
+            <button type="button" class="btn-toggle-builder" id="btnToggleBuilder">Mostrar mais</button>
+          </div>
+
+          <!-- Conteúdo recolhível do bloco de construção -->
+          <div id="builderCollapsible" style="display: none;">
+            
+            <!-- Alerta Informativo -->
+            <div class="info-alert" style="margin-bottom: 20px;">
+              <i class="fa-solid fa-circle-info info-alert__icon"></i>
+              <p class="info-alert__text">A IA vai transformar estes dados em um relato editável. Revise o texto gerado antes de continuar o atendimento.</p>
+            </div>
+
+            <!-- Stepper / Linha dos 4 campos direcionadores -->
+            <div class="stepper-list">
+              
+              <!-- Item 1: Relação de consumo (Aberto por padrão) -->
+              <div class="stepper-item">
+                <div class="stepper-indicator">
+                  <div class="stepper-number">1</div>
+                  <div class="stepper-line"></div>
+                </div>
+                <div class="stepper-content">
+                  <div class="stepper-header" data-target="bodyRelacao">
+                    <h4 class="stepper-title is-active">Relação de consumo</h4>
+                    <span class="stepper-icon-toggle"><i class="fa-solid fa-chevron-up"></i></span>
+                  </div>
+                  <p class="stepper-desc">O que foi contratado ou comprado e em que contexto? Informe datas, valores, se havia garantia e outros dados relevantes.</p>
+                  <div class="stepper-body" id="bodyRelacao">
+                    <textarea class="stepper-textarea" id="inputRelacao" placeholder=""></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: Problema -->
+              <div class="stepper-item">
+                <div class="stepper-indicator">
+                  <div class="stepper-number">2</div>
+                  <div class="stepper-line"></div>
+                </div>
+                <div class="stepper-content">
+                  <div class="stepper-header" data-target="bodyProblema">
+                    <h4 class="stepper-title">Problema</h4>
+                    <span class="stepper-icon-toggle"><i class="fa-solid fa-chevron-down"></i></span>
+                  </div>
+                  <p class="stepper-desc">O que aconteceu? O que motivou a solicitação? Informe datas, valores, produtos, cobranças ou outros dados relevantes.</p>
+                  <div class="stepper-body is-collapsed" id="bodyProblema">
+                    <textarea class="stepper-textarea" id="inputProblema" placeholder=""></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3: Tentativas de resolução -->
+              <div class="stepper-item">
+                <div class="stepper-indicator">
+                  <div class="stepper-number">3</div>
+                  <div class="stepper-line"></div>
+                </div>
+                <div class="stepper-content">
+                  <div class="stepper-header" data-target="bodyTentativas">
+                    <h4 class="stepper-title">Tentativas de resolução</h4>
+                    <span class="stepper-icon-toggle"><i class="fa-solid fa-chevron-down"></i></span>
+                  </div>
+                  <p class="stepper-desc">O que o consumidor já fez para tentar resolver o problema? Informe respostas da empresa e protocolos de atendimento.</p>
+                  <div class="stepper-body is-collapsed" id="bodyTentativas">
+                    <textarea class="stepper-textarea" id="inputTentativas" placeholder=""></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4: Solução esperada -->
+              <div class="stepper-item">
+                <div class="stepper-indicator">
+                  <div class="stepper-number">4</div>
+                  <div class="stepper-line"></div>
+                </div>
+                <div class="stepper-content">
+                  <div class="stepper-header" data-target="bodySolucao">
+                    <h4 class="stepper-title">Solução esperada</h4>
+                    <span class="stepper-icon-toggle"><i class="fa-solid fa-chevron-down"></i></span>
+                  </div>
+                  <p class="stepper-desc">O que o consumidor espera como solução? Por que ele entende que deve receber determinada solução?</p>
+                  <div class="stepper-body is-collapsed" id="bodySolucao">
+                    <textarea class="stepper-textarea" id="inputSolucao" placeholder=""></textarea>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Botão de Ação: Analisar e gerar relato -->
+            <div style="margin-top: 16px;">
+              <button type="button" class="btn-analyze-generate" id="btnAnalyze" disabled>
+                <i class="fa-solid fa-wand-magic-sparkles"></i> Analisar e gerar relato
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ==================================================================
+             SEÇÃO: RELATO (EDITOR RICO E SUGESTÕES DA IA)
+             ================================================================== -->
+        <div class="relato-section" id="relatoSection">
+          
+          <div class="relato-section__header">
+            <h3 class="relato-section__title">Relato</h3>
+            <button type="button" class="btn-maximize" id="btnMaximize" title="Expandir editor">
+              <i class="fa-solid fa-expand"></i>
+            </button>
+          </div>
+
+          <!-- Alerta de Sugestões de Melhoria (Visível após geração pela IA) -->
+          <div class="ai-suggestions-alert" id="aiSuggestionsAlert" style="display: none;">
+            <i class="fa-solid fa-wand-magic-sparkles ai-suggestions-alert__icon"></i>
+            <div class="ai-suggestions-alert__content">
+              <h4 class="ai-suggestions-alert__title">Sugestões de melhoria do relato</h4>
+              <ul class="ai-suggestions-alert__list" id="aiSuggestionsList">
+                <li>Qual é a marca e o modelo do aparelho?</li>
+                <li>Qual foi a forma de pagamento utilizada (à vista, cartão, parcelado)?</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Editor Rico com Barra de Ferramentas -->
+          <div class="editor-container" id="editorContainer">
+            <div class="editor-toolbar">
+              <button type="button" class="toolbar-btn" data-command="bold" title="Negrito"><strong>B</strong></button>
+              <button type="button" class="toolbar-btn" data-command="italic" title="Itálico"><em>I</em></button>
+              <button type="button" class="toolbar-btn" data-command="underline" title="Sublinhado"><u>U</u></button>
+              <button type="button" class="toolbar-btn" data-command="strikeThrough" title="Tachado"><s>S</s></button>
+              <div style="width: 1px; height: 18px; background: var(--cor-cinza-30); margin: 0 4px;"></div>
+              <button type="button" class="toolbar-btn" data-command="justifyLeft" title="Alinhar à esquerda"><i class="fa-solid fa-align-left"></i></button>
+              <button type="button" class="toolbar-btn" data-command="justifyCenter" title="Centralizar"><i class="fa-solid fa-align-center"></i></button>
+              <button type="button" class="toolbar-btn" data-command="justifyRight" title="Alinhar à direita"><i class="fa-solid fa-align-right"></i></button>
+              <button type="button" class="toolbar-btn" data-command="justifyFull" title="Justificar"><i class="fa-solid fa-align-justify"></i></button>
+              <div style="width: 1px; height: 18px; background: var(--cor-cinza-30); margin: 0 4px;"></div>
+              <button type="button" class="toolbar-btn" data-command="insertUnorderedList" title="Lista com marcadores"><i class="fa-solid fa-list-ul"></i></button>
+              <button type="button" class="toolbar-btn" data-command="insertOrderedList" title="Lista numerada"><i class="fa-solid fa-list-ol"></i></button>
+              <div style="width: 1px; height: 18px; background: var(--cor-cinza-30); margin: 0 4px;"></div>
+              <button type="button" class="toolbar-btn" data-command="removeFormat" title="Limpar formatação"><i class="fa-solid fa-eraser"></i></button>
+            </div>
+            
+            <div class="editor-content" id="relatoEditor" contenteditable="true" placeholder="Digite ou gere o relato aqui..."></div>
+          </div>
+          <span class="form-error-message" id="errorRelato" style="display: none;">O campo Relato é obrigatório.</span>
+
+        </div>
+
+        <!-- Barra de Assistência da IA para Campos Posteriores -->
+        <div class="ai-assistant-banner">
+          <div class="ai-assistant-banner__left">
+            <i class="fa-solid fa-robot ai-assistant-banner__robot-icon"></i>
+            <p class="ai-assistant-banner__text">Quando você tiver concluído o relato, nossa inteligência artificial pode sugerir respostas para os campos abaixo a partir das informações inseridas.</p>
+          </div>
+          <button type="button" class="btn-ai-auto-suggest" id="btnAiAutoSuggest">
+            <i class="fa-solid fa-robot"></i> Gerar sugestões automáticas
+          </button>
+        </div>
+
+        <!-- Pergunta de Contato Prévio (Radio) -->
+        <div class="radio-group-container">
+          <label class="form-label">Procurou a empresa para solucionar o problema?</label>
+          <div class="radio-options-row">
+            <label class="radio-custom-label">
+              <input type="radio" name="procurouEmpresa" id="radioSim" value="Sim">
+              <span>Sim</span>
+            </label>
+            <label class="radio-custom-label">
+              <input type="radio" name="procurouEmpresa" id="radioNao" value="Não">
+              <span>Não</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Select: Como comprou/contratou? -->
+        <div class="form-field">
+          <label class="form-label" for="selectForma">Como comprou/contratou?</label>
+          <select class="form-select" id="selectForma">
+            <option value="" selected disabled>Selecione...</option>
+            <option value="Catálogo">Catálogo</option>
+            <option value="Domicílio">Domicílio</option>
+            <option value="Ganhei de Presente">Ganhei de Presente</option>
+            <option value="Internet">Internet</option>
+            <option value="Loja Física">Loja Física</option>
+            <option value="Não Comprei / Contratei">Não Comprei / Contratei</option>
+            <option value="SMS/ Mensagem de texto">SMS/ Mensagem de texto</option>
+            <option value="Stand, Feiras e Eventos">Stand, Feiras e Eventos</option>
+            <option value="Telefone">Telefone</option>
+          </select>
+        </div>
+
+        <!-- Select: Área -->
+        <div class="form-field">
+          <label class="form-label" for="selectArea">Área</label>
+          <select class="form-select" id="selectArea">
+            <option value="" selected disabled>Selecione...</option>
+            <option value="Água, Energia e Gás">Água, Energia e Gás</option>
+            <option value="Alimentos">Alimentos</option>
+            <option value="Demais Produtos">Demais Produtos</option>
+            <option value="Demais Serviços">Demais Serviços</option>
+            <option value="Educação">Educação</option>
+            <option value="Habitação">Habitação</option>
+            <option value="Informações Procon">Informações Procon</option>
+            <option value="Produtos de Telefonia e Informática">Produtos de Telefonia e Informática</option>
+            <option value="Produtos Eletrodomésticos e Eletrônicos">Produtos Eletrodomésticos e Eletrônicos</option>
+            <option value="Saúde">Saúde</option>
+            <option value="Serviços Financeiros">Serviços Financeiros</option>
+            <option value="Telecomunicações">Telecomunicações</option>
+            <option value="Transporte">Transporte</option>
+            <option value="Turismo / Viagens">Turismo / Viagens</option>
+          </select>
+          <span class="form-error-message" id="errorArea" style="display: none;">O campo Área é obrigatório.</span>
+        </div>
+
+        <!-- Select: Assunto -->
+        <div class="form-field">
+          <label class="form-label" for="selectAssunto">Assunto</label>
+          <select class="form-select" id="selectAssunto">
+            <option value="" selected disabled>Selecione...</option>
+            <option value="Acessório para Eletroeletrônicos (Pilhas, Baterias e etc.)">Acessório para Eletroeletrônicos (Pilhas, Baterias e etc.)</option>
+            <option value="Acessórios e Periféricos (Monitor, Impressora, Pendrive, Hd Externo, Cd, Dvd, Outras Mídias, Roteador, Software, Scanner e etc.)">Acessórios e Periféricos (Monitor, Impressora, Pendrive, Hd Externo, Cd, Dvd, Outras Mídias, Roteador, Software, Scanner e etc.)</option>
+            <option value="Aéreo">Aéreo</option>
+            <option value="Água e Esgoto">Água e Esgoto</option>
+            <option value="Alimentos para Fins Especiais (Dietéticos, Infantis, Suplementos, Gestantes, Energéticos, Isotônicos e etc.)">Alimentos para Fins Especiais (Dietéticos, Infantis, Suplementos, Gestantes, Energéticos, Isotônicos e etc.)</option>
+            <option value="Aparelho Celular">Aparelho Celular</option>
+            <option value="Aparelho de Som, Vídeo e Imagem (Câmera, Filmadora, Dvd, Home Theater e etc.)">Aparelho de Som, Vídeo e Imagem (Câmera, Filmadora, Dvd, Home Theater e etc.)</option>
+            <option value="Aparelho de Telefone Fixo / Interfone">Aparelho de Telefone Fixo / Interfone</option>
+            <option value="Aplicativo de Mobilidade Urbana">Aplicativo de Mobilidade Urbana</option>
+            <option value="Ar Condicionado, Ventilador e Aquecedor">Ar Condicionado, Ventilador e Aquecedor</option>
+            <option value="Atendimento Bancário">Atendimento Bancário</option>
+            <option value="Aves, Carnes e Peixes / Frutos do Mar">Aves, Carnes e Peixes / Frutos do Mar</option>
+            <option value="Bar, Restaurantes e Casas Noturnas">Bar, Restaurantes e Casas Noturnas</option>
+            <option value="Bar, Restaurantes e Casas Noturnas e Similares">Bar, Restaurantes e Casas Noturnas e Similares</option>
+            <option value="Bebidas">Bebidas</option>
+            <option value="Biscoitos e Doces">Biscoitos e Doces</option>
+            <option value="Cadastro Positivo">Cadastro Positivo</option>
+            <option value="Caixa Eletrônico Multibanco">Caixa Eletrônico Multibanco</option>
+            <option value="Cargas e Encomendas">Cargas e Encomendas</option>
+            <option value="Cartão de Crédito / Cartão de Débito / Cartão de Loja">Cartão de Crédito / Cartão de Débito / Cartão de Loja</option>
+            <option value="Cartão de Programas Sociais">Cartão de Programas Sociais</option>
+            <option value="Cereais, Grãos, Massas e Pães">Cereais, Grãos, Massas e Pães</option>
+            <option value="Colocação Profissional / Agência de Empregos">Colocação Profissional / Agência de Empregos</option>
+            <option value="Combustível / Inflamáveis (Gasolina, Etanol, Óleo, Botijão de Gás, GLP, Carvão, Fogos de Artifício e etc.)">Combustível / Inflamáveis (Gasolina, Etanol, Óleo, Botijão de Gás, GLP, Carvão, Fogos de Artifício e etc.)</option>
+            <option value="Consórcio (Exceto Imóveis)">Consórcio (Exceto Imóveis)</option>
+            <option value="Consórcio de Imóveis">Consórcio de Imóveis</option>
+            <option value="Consulta / Monitoramento de CPF">Consulta / Monitoramento de CPF</option>
+            <option value="Conta Corrente / Salário / Poupança / Conta Aposentadoria">Conta Corrente / Salário / Poupança / Conta Aposentadoria</option>
+            <option value="Controle de Pragas, Defensivos , Inseticistas e etc.">Controle de Pragas, Defensivos , Inseticistas e etc.</option>
+            <option value="Crédito Consignado (para Servidores Públicos ou Trabalhadores do Setor Privado)">Crédito Consignado (para Servidores Públicos ou Trabalhadores do Setor Privado)</option>
+            <option value="Crédito Consignado / Cartão de Crédito Consignado / RMC (para Beneficiários do INSS)">Crédito Consignado / Cartão de Crédito Consignado / RMC (para Beneficiários do INSS)</option>
+            <option value="Crédito Pessoal e Demais Empréstimos (Exceto Financiamento de Imóveis e Veículos)">Crédito Pessoal e Demais Empréstimos (Exceto Financiamento de Imóveis e Veículos)</option>
+            <option value="Crédito Rural">Crédito Rural</option>
+            <option value="Cultura / Esporte / Lazer / Eventos (Shows, Jogos, Cinema, Teatro, Festas, Clubes, Academias de Ginástica)">Cultura / Esporte / Lazer / Eventos (Shows, Jogos, Cinema, Teatro, Festas, Clubes, Academias de Ginástica)</option>
+            <option value="Curso Superior (Graduação e Pós)">Curso Superior (Graduação e Pós)</option>
+            <option value="Cursos Livres">Cursos Livres</option>
+            <option value="Cursos Técnicos">Cursos Técnicos</option>
+            <option value="Decoração">Decoração</option>
+            <option value="Demais Aparelhos de Comunicação">Demais Aparelhos de Comunicação</option>
+            <option value="Demais Seguros">Demais Seguros</option>
+            <option value="Eletroportáteis (Batedeira, Liquidificador, Umidificador, Secador, Cafeteira e etc.)">Eletroportáteis (Batedeira, Liquidificador, Umidificador, Secador, Cafeteira e etc.)</option>
+            <option value="Energia Elétrica">Energia Elétrica</option>
+            <option value="Esporte / Lazer / Festa (Equipamento de Ginástica, Camping, Náutica, Caça, Pesca, Artigo Esportivo, Bicicleta, Piscina e etc.)">Esporte / Lazer / Festa (Equipamento de Ginástica, Camping, Náutica, Caça, Pesca, Artigo Esportivo, Bicicleta, Piscina e etc.)</option>
+            <option value="Financiamento de Imóveis">Financiamento de Imóveis</option>
+            <option value="Financiamentos de Veículos / Leasing">Financiamentos de Veículos / Leasing</option>
+            <option value="Flores">Flores</option>
+            <option value="Fogão, Microondas, Forno Elétrico, Depurador de Ar e Coifa">Fogão, Microondas, Forno Elétrico, Depurador de Ar e Coifa</option>
+            <option value="Gás">Gás</option>
+            <option value="Hospedagem">Hospedagem</option>
+            <option value="Imóvel Novo (Construtora ou Imobiliária)">Imóvel Novo (Construtora ou Imobiliária)</option>
+            <option value="Imóvel Usado (Construtora ou Imobiliária)">Imóvel Usado (Construtora ou Imobiliária)</option>
+            <option value="Informação">Informação</option>
+            <option value="Instrumentos e Acessórios Musicais">Instrumentos e Acessórios Musicais</option>
+            <option value="Internet Fixa">Internet Fixa</option>
+            <option value="Internet Móvel">Internet Móvel</option>
+            <option value="Investimentos / Aplicações / Câmbio / Previdência Privada">Investimentos / Aplicações / Câmbio / Previdência Privada</option>
+            <option value="Jornais, Revistas e Demais Veículos de Notícias">Jornais, Revistas e Demais Veículos de Notícias</option>
+            <option value="Lanches e Refeições Industrializadas">Lanches e Refeições Industrializadas</option>
+            <option value="Lavadora de Roupa, Louça e Secadora">Lavadora de Roupa, Louça e Secadora</option>
+            <option value="Leites e Derivados">Leites e Derivados</option>
+            <option value="Limpeza e Manutenção Predial">Limpeza e Manutenção Predial</option>
+            <option value="Livros e Papelaria (Material Didático, Artigos de Escritório e etc.)">Livros e Papelaria (Material Didático, Artigos de Escritório e etc.)</option>
+            <option value="Locação, Aluguel de Carros, Roupas e etc. (Exceto Habitação)">Locação, Aluguel de Carros, Roupas e etc. (Exceto Habitação)</option>
+            <option value="Marcenaria, Móveis Planejados">Marcenaria, Móveis Planejados</option>
+            <option value="Material de Construção, Acabamento e Ferramentas">Material de Construção, Acabamento e Ferramentas</option>
+            <option value="Medicamentos">Medicamentos</option>
+            <option value="Microcomputador e Laptops">Microcomputador e Laptops</option>
+            <option value="Molhos e Temperos">Molhos e Temperos</option>
+            <option value="Móveis e Colchões">Móveis e Colchões</option>
+            <option value="Óleos e Gorduras">Óleos e Gorduras</option>
+            <option value="Pacote / Excursão / Agência de Turismo">Pacote / Excursão / Agência de Turismo</option>
+            <option value="Pacote de Serviços (Combo)">Pacote de Serviços (Combo)</option>
+            <option value="Perfumaria, Cosméticos e Higiene Pessoal">Perfumaria, Cosméticos e Higiene Pessoal</option>
+            <option value="Plano de Saúde (Convênio, Autogestão, Seguro Saúde)">Plano de Saúde (Convênio, Autogestão, Seguro Saúde)</option>
+            <option value="Plano Odontológico (Convênio, Autogestão, Seguro Saúde)">Plano Odontológico (Convênio, Autogestão, Seguro Saúde)</option>
+            <option value="Produtos Industrializados (Embutidos, Enlatados, Conservas e etc.)">Produtos Industrializados (Embutidos, Enlatados, Conservas e etc.)</option>
+            <option value="Produtos para Crianças (Carrinho, Brinquedos, Cadeira, Vestuário, Mamadeira e etc.)">Produtos para Crianças (Carrinho, Brinquedos, Cadeira, Vestuário, Mamadeira e etc.)</option>
+            <option value="Produtos Relacionados a Saúde, Exceto Medicamentos (Próteses, Aparelhos Corretivos, Auxiliares de Diagnóstico, Produtos Órticos, Ortopédicos, Contraceptivos e etc.)">Produtos Relacionados a Saúde, Exceto Medicamentos (Próteses, Aparelhos Corretivos, Auxiliares de Diagnóstico, Produtos Órticos, Ortopédicos, Contraceptivos e etc.)</option>
+            <option value="Produtos Veterinários (Ração, Acessórios e etc.)">Produtos Veterinários (Ração, Acessórios e etc.)</option>
+            <option value="Programas de Fidelidade / Benefícios (Pontos, Milhagens e etc.)">Programas de Fidelidade / Benefícios (Pontos, Milhagens e etc.)</option>
+            <option value="Refrigerador / Freezer">Refrigerador / Freezer</option>
+            <option value="Rodoviário Interestadual / Intermunicipal">Rodoviário Interestadual / Intermunicipal</option>
+            <option value="Score / Pontuação de Crédito">Score / Pontuação de Crédito</option>
+            <option value="Segurança / Monitoramento / Rastreamento">Segurança / Monitoramento / Rastreamento</option>
+            <option value="Seguro de Acidentes Pessoais">Seguro de Acidentes Pessoais</option>
+            <option value="Seguro de Veículos">Seguro de Veículos</option>
+            <option value="Seguro de Vida">Seguro de Vida</option>
+            <option value="Seguro Desemprego / Perda de Renda">Seguro Desemprego / Perda de Renda</option>
+            <option value="Seguro Funeral">Seguro Funeral</option>
+            <option value="Seguro Garantia Estendida">Seguro Garantia Estendida</option>
+            <option value="Seguro Habitacional (Financiamento para Aquisição, Reforma ou Construção de Imóvel)">Seguro Habitacional (Financiamento para Aquisição, Reforma ou Construção de Imóvel)</option>
+            <option value="Seguro Prestamista">Seguro Prestamista</option>
+            <option value="Seguro Residencial / Condomínio">Seguro Residencial / Condomínio</option>
+            <option value="Seguro Viagem">Seguro Viagem</option>
+            <option value="Serviço de Acidentes Pessoais">Serviço de Acidentes Pessoais</option>
+            <option value="Serviço de Assessoria (Jurídica e/ou Financeira, Emissão de Documentos / Despachante, Reabilitação de Nome / Crédito, Revisão de Contrato e etc.">Serviço de Assessoria (Jurídica e/ou Financeira, Emissão de Documentos / Despachante, Reabilitação de Nome / Crédito, Revisão de Contrato e etc.</option>
+            <option value="Serviço de Pagamento Online / Via Celular / Maquininha">Serviço de Pagamento Online / Via Celular / Maquininha</option>
+            <option value="Serviço de Suporte, Reparo e Manutenção">Serviço de Suporte, Reparo e Manutenção</option>
+            <option value="Serviços Automotivos">Serviços Automotivos</option>
+            <option value="Serviços de Áudio, Foto e Imagem">Serviços de Áudio, Foto e Imagem</option>
+            <option value="Serviços de Beleza e Cuidados Pessoais">Serviços de Beleza e Cuidados Pessoais</option>
+            <option value="Serviços de Costura e Confecção, Sapataria">Serviços de Costura e Confecção, Sapataria</option>
+            <option value="Serviços de Entrega / Delivery">Serviços de Entrega / Delivery</option>
+            <option value="Serviços de Estética (exceto Procedimentos Cirúrgicos)">Serviços de Estética (exceto Procedimentos Cirúrgicos)</option>
+            <option value="Serviços de Mudança">Serviços de Mudança</option>
+            <option value="Serviços Funerários e Cemitério">Serviços Funerários e Cemitério</option>
+            <option value="Serviços Gráficos">Serviços Gráficos</option>
+            <option value="Serviços na Internet (Provedor, Hospedagem, Aplicativos, Streaming, Jogos e etc.)">Serviços na Internet (Provedor, Hospedagem, Aplicativos, Streaming, Jogos e etc.)</option>
+            <option value="Serviços Particulares de Saúde (Médico, Odontológico, Hospitalar, Ambulatorial, Clínico, Cuidadores de Idosos)">Serviços Particulares de Saúde (Médico, Odontológico, Hospitalar, Ambulatorial, Clínico, Cuidadores de Idosos)</option>
+            <option value="Serviços Por Assinatura (Livros, Vinhos e etc.)">Serviços Por Assinatura (Livros, Vinhos e etc.)</option>
+            <option value="Serviços Postais">Serviços Postais</option>
+            <option value="Serviços Veterinários">Serviços Veterinários</option>
+            <option value="Supermercados e Conveniências">Supermercados e Conveniências</option>
+            <option value="Tablet">Tablet</option>
+            <option value="Telefonia Fixa">Telefonia Fixa</option>
+            <option value="Telefonia Móvel Pós-Paga">Telefonia Móvel Pós-Paga</option>
+            <option value="Telefonia Móvel Pré-Paga">Telefonia Móvel Pré-Paga</option>
+            <option value="Televisão">Televisão</option>
+            <option value="Transfer / Receptivo">Transfer / Receptivo</option>
+            <option value="TV por Assinatura">TV por Assinatura</option>
+            <option value="Utilidades Domésticas e Decoração (para Limpeza, Cozinha, Cama, Mesa e Banho, Tapetes, Cortinas, Persianas, Jardinagem e etc.)">Utilidades Domésticas e Decoração (para Limpeza, Cozinha, Cama, Mesa e Banho, Tapetes, Cortinas, Persianas, Jardinagem e etc.)</option>
+            <option value="Vegetais (Frutas, Verduras e Legumes)">Vegetais (Frutas, Verduras e Legumes)</option>
+            <option value="Veículos - Peças e Acessórios (Roda, Pneu, Rádio, Farol e etc.)">Veículos - Peças e Acessórios (Roda, Pneu, Rádio, Farol e etc.)</option>
+            <option value="Veículos Novos (Motos, Carros, Caminhões)">Veículos Novos (Motos, Carros, Caminhões)</option>
+            <option value="Veículos Usados (Motos, Carros, Caminhões)">Veículos Usados (Motos, Carros, Caminhões)</option>
+            <option value="Vestuário e Artigos de Uso Pessoal (Roupa, Calçados, Jóias, Bijuterias, Malas, Bolsas e etc.)">Vestuário e Artigos de Uso Pessoal (Roupa, Calçados, Jóias, Bijuterias, Malas, Bolsas e etc.)</option>
+          </select>
+          <span class="form-error-message" id="errorAssunto" style="display: none;">O campo Assunto é obrigatório.</span>
+        </div>
+
+        <!-- Select: Problema -->
+        <div class="form-field">
+          <label class="form-label" for="selectProblema">Problema</label>
+          <select class="form-select" id="selectProblema">
+            <option value="" selected disabled>Selecione...</option>
+            <option value="Atendimento/SAC">Atendimento/SAC</option>
+            <option value="Cobrança / Contestação">Cobrança / Contestação</option>
+            <option value="Contrato / Oferta">Contrato / Oferta</option>
+            <option value="Dados Pessoais E Privacidade">Dados Pessoais E Privacidade</option>
+            <option value="Entrega Do Produto">Entrega Do Produto</option>
+            <option value="Informação">Informação</option>
+            <option value="Saúde E Segurança">Saúde E Segurança</option>
+            <option value="Vício De Qualidade">Vício De Qualidade</option>
+          </select>
+          <span class="form-error-message" id="errorProblema" style="display: none;">O campo Item Problema é obrigatório.</span>
+        </div>
+
+        <!-- Seção: Anexos (0) -->
+        <div class="anexos-section">
+          <h3 class="anexos-section__title" id="anexosTitle">Anexos (0)</h3>
+          
+          <!-- Alerta de Sugestões de Anexos (Visível após geração pela IA) -->
+          <div class="anexos-suggestions-alert" id="anexosSuggestionsAlert" style="display: none;">
+            <i class="fa-solid fa-wand-magic-sparkles anexos-suggestions-alert__icon"></i>
+            <div class="anexos-suggestions-alert__content">
+              <h4 class="anexos-suggestions-alert__title">Sugestões de anexos</h4>
+              <ul class="anexos-suggestions-alert__list" id="anexosSuggestionsList">
+                <li>Nota fiscal</li>
+                <li>Protocolo de atendimento</li>
+              </ul>
+            </div>
+          </div>
+
+          <button type="button" class="btn-upload-file" id="btnUploadFile">
+            <i class="fa-solid fa-arrow-up-from-bracket"></i> Selecionar arquivos...
+          </button>
+          <input type="file" id="inputUploadFile" multiple style="display: none;" />
+
+          <div class="anexos-list" id="anexosList"></div>
+        </div>
+
+        <!-- Rodapé de Ações Finais -->
+        <div class="form-footer-actions">
+          <button type="button" class="btn-return-queue" id="btnReturnQueue">
+            <i class="fa-solid fa-arrow-turn-up" style="transform: rotate(-90deg);"></i> Retornar para a fila
+          </button>
+          <div class="btn-finish-wrapper" id="btnFinishWrapper">
+            <button type="button" class="btn-finish-service" id="btnFinish" disabled>
+              <i class="fa-solid fa-check"></i> Finalizar atendimento
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       MODAL DE CONFIRMAÇÃO ("GERAR RELATO")
+       ====================================================================== -->
+  <div class="modal-overlay" id="confirmModalOverlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Gerar relato</h3>
+        <button type="button" class="modal-close-btn" id="btnModalClose">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Deseja gerar um novo relato? O relato atual será substituído com as alterações realizadas.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-modal-cancel" id="btnModalCancel">Cancelar</button>
+        <button type="button" class="btn-modal-confirm" id="btnModalConfirm">Gerar relato</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       MODAL DE CONFIRMAÇÃO ("EXCLUIR ANEXO")
+       ====================================================================== -->
+  <div class="modal-overlay" id="deleteAttachmentModalOverlay">
+    <div class="modal-container delete-attachment-modal">
+      <div class="modal-header delete-attachment-modal__header">
+        <h3 class="modal-title delete-attachment-modal__title">Excluir Anexo</h3>
+      </div>
+      <div class="modal-body delete-attachment-modal__body">
+        <div class="delete-attachment-alert">
+          <i class="fa-solid fa-triangle-exclamation delete-attachment-alert__icon"></i>
+          <div class="delete-attachment-alert__content">
+            <h4 class="delete-attachment-alert__title">Fique atento:</h4>
+            <p class="delete-attachment-alert__text">
+              Tem certeza de que deseja excluir o anexo <span id="deleteAttachmentFileName" class="delete-attachment-alert__filename">""</span> ?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer delete-attachment-modal__footer">
+        <button type="button" class="btn-cancel-delete" id="btnCancelDeleteAttachment">Cancelar</button>
+        <button type="button" class="btn-confirm-delete" id="btnConfirmDeleteAttachment">Sim, excluir</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       TOAST FLUTUANTE DE FEEDBACK (SUCESSO)
+       ====================================================================== -->
+  <div class="toast-container">
+    <div class="toast-message" id="toastFeedback">
+      <div class="toast-message__content">
+        <h4 class="toast-message__title" id="toastTitle">Sucesso</h4>
+        <p class="toast-message__text" id="toastText">Relato gerado com sucesso. Faça a revisão e, se necessário, edite o conteúdo no campo Relato.</p>
+      </div>
+      <button type="button" class="toast-message__close" id="btnToastClose">&times;</button>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       OVERLAY DE CARREGAMENTO SIMULADO DA IA (SPINNER DIGIX UI)
+       ====================================================================== -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <svg class="digix-spinner" viewBox="0 0 50 50">
+      <circle cx="25" cy="25" r="20"></circle>
+    </svg>
+    <span class="loading-text">Analisando e organizando informações...</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="assets/js/telemetry.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
